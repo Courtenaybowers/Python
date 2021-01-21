@@ -1,0 +1,72 @@
+# Check the Python version
+import sys
+print(sys.version)
+
+PRINT:
+#print Hello Python
+print("Hello Python")
+
+#print "Hello World" on two different lines
+print("Hello\nWorld")
+
+DATA TYPES:
+type(11)
+  int
+  
+type(21.213)
+  float
+  
+type("Hello Python 101")
+  str
+
+TYPE CASTING:
+float(2)
+  2.0
+
+int(1.1)
+  1
+
+int('1')
+  1
+
+int('A')
+  ERROR
+
+type(True)
+  bool
+
+int(True)
+  1
+
+int(False)
+  0
+
+bool(1)
+  True
+
+MATHEMATICAL OPERATIONS:
+5*5
+  25
+  
+25/5
+  5
+  
+25//5
+  5.0
+
+25//6
+  4.166
+
+VARIABLES:
+my_variable=10
+
+x=43 + 60 + 16 + 41
+  x:160
+
+x/x=60
+  2.666
+
+total_min= 42 + 42 + 57
+  =142
+total_hr=total_min/60
+  =2.367
