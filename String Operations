@@ -1,0 +1,99 @@
+Name= "Michael Jackson"
+
+Name[0]
+  M
+Name[6]
+  l
+Name[13]
+  o
+Name[-1]
+  n
+Name[0:4]
+  Mich
+Name[8:12]
+  Jack
+
+#Select every 2nd variable in Name
+Name[::2]
+  McalJcsn
+
+#Return every index value up to index 4
+Name[0:5:2]:
+  Mca
+
+#Obtain the length of the string (Name)
+len("Michael Jordon")
+  14
+
+#Concatenate strings (Name and string value)
+Name = "Michael Jordon"
+Statement = Name + "is the best"
+Statement = 
+  "Michael Jordon is the best"
+
+#Tuples (replicate the string "Michael Jordon")
+3 * "Michael JordonJackson"
+  "Michael Jordon Michael Jordon Michael Jordon"
+
+#Modify the Name string
+Name = 
+  Michael Jordan
+Name = Name + 'is the best'
+  Michael Jordon is the best
+
+#Print the string below on a separate line
+print('Michael Jordan\n is the best')
+  Michael Jordan
+  is the best
+
+#Print the string below separated by a tab
+print('Michael Jordon\t is the best')
+  Michael Jordan  is the best
+
+#Print the string below with a "\" in the string
+print('Michael Jordan \\ is the best')
+  Michael Jordan \ is the best
+  
+#Convert the lowercase characters in the string to upper case characters
+A='Chicago loves Michael Jordan'
+B=A.upper()
+  B: CHICAGO LOVES MICHAEL JORDAN
+
+#Replace Michael Jordan for Patrick Kane
+A="Chicago loves Michael Jordan"
+B=A.replace('Michael Jordan','Patrick Kane')
+  B: Chicago loves Patrick Kane
+
+#Find the substrings below in the string (Name)
+Name = "Michael Jordan"
+Name.find('el')
+  5
+Name.find('Jord')
+  8
+Name.find('&')
+  -1
+
+Examples:
+#Slicing
+Letters="ABCDEFGHIJK"
+Letters[0:4:1]
+  'ABCD'
+
+#Use a stride value of two on the following string
+Good="GsoAo+d"
+Good[::2]
+  'Good'
+
+#Convert the string to uppercase
+A='uppercase'
+B=A.upper()
+B
+  ='UPPERCASE'
+
+#Only obtain the even elements
+Numbers="0123456"
+Numbers[::2]
+  '0246'
+
+"0123456".find('1')
+  '1'
