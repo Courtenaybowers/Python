@@ -1,0 +1,34 @@
+#Create Tuple1
+Tuple1 =('disco',10,1.2)
+  type(Tuple1)
+    'tuple'
+
+Tuple1[0]
+  "disco"
+
+Tuple1[-3]
+  "disco"
+
+#Concatenate Tuple1 to form Tuple2
+Tuple2 = Tuple1 + ("hard rock",10)
+Tuple2
+  ("disco",10,1.2,"hard rock",10)
+
+#List the first 3 elements of Tuple2
+Tuple2[0:3]
+  ('disco',10,1.2)
+
+#Return the length of Tuple2
+len(("disco",10,1.2,"hard rock",10))
+  5
+
+#Sort the Ratings tuple
+Ratings=(10,9,6,5,10,8,9,6,2)
+RatingsSorted=sorted(Ratings)
+
+#Create a nested tuple
+NT=(1,2,("edm","techno"),(3,4),("house",(1,2)))
+NT[2]
+  "edm","techno"
+NT[2][1]
+  "techno"
