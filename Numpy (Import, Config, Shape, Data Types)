@@ -1,0 +1,46 @@
+#Import numpy
+import numpy as np
+
+#print the numpy version and build configuration
+print(np.__version__)
+print(np.show_config())
+
+#Import numpy did not work, how to install?
+1. Open your terminal
+2. Type "pip install numpy"
+3. Press enter
+
+#Multiple array a * array b
+import numpy as np
+a=np.array([1,3,5])
+b=np.array([1,2,3])
+print(a*b)
+  [1 6 15]
+
+#Print a 1-dimensional array "a"
+a = np.array([1,2,3])
+print(a)
+  [1,2,3]
+
+#Print a 2-dimensional array "b"
+b = np.array([[9.0,8.0,7.0],[6.0,5.0,4.0]])
+print(b)
+  [[9. 8. 7.]
+   [6. 5. 4.]]
+
+#Get the dimension of the array
+a.ndim
+  1
+b.ndim
+  2
+
+#Get the shape of the array "b" (# of rows, # of columns)
+b.shape
+  (2,3)
+
+#Specify the data type of the array
+a = np.array([1,2,3], dtype='int16')
+print(a)
+  [1 2 3]
+a.dtype
+  dtype('int16')
