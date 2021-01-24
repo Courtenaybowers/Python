@@ -32,3 +32,30 @@ NT[2]
   "edm","techno"
 NT[2][1]
   "techno"
+NT[2[1][0]
+  t
+
+#Add (1991,1992,1993) to Renaissance______________________________________________________
+Renaissance=['Michael Jordan','Derrick Rose','Kanye West','Barack Obama']
+Renaissance.extend([1991,1992,1993])
+  Renaissance=['Michael Jordan','Derrick Rose','Kanye West','Barack Obama',1991,1992,1993]
+  
+Renaissance[0]
+  'Michael Jordan'
+  
+Renaissance[2]='"Lupe Fiasco"
+  Renaissance=['Michael Jordan','Derrick Rose','Lupe Fiasco','Barack Obama',1991,1992,1993]
+
+del(Renaissance[4])
+  Renaissance=['Michael Jordan','Derrick Rose','Lupe Fiasco','Barack Obama',1992,1993]
+  
+Renaissance=['Michael Jordan','Derrick Rose','Lupe Fiasco','Barack Obama',1992,1993]
+Windy=Renaissance[:]
+  Windy=['Michael Jordan','Derrick Rose','Lupe Fiasco','Barack Obama',1992,1993]
+
+#Split the strings below__________________________________________________________________
+"A,B,C,D".split","
+ ["A", "B", "C", "D"]
+
+"ABCD".split()
+  ["A", "B", "C", "D"]
