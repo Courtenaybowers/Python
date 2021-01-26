@@ -1,0 +1,12 @@
+#Scientifics Computing Libraries:
+  #Pandas (Data structures & tools) - data manipulatin and analysis to structured data
+  #NumPy (Array & matrices) - 
+  #SciPy (Integrals, solving differential equations, optimization) - advanced math problems
+
+#Visualization Libraries
+  #Matplotlib (plots & graphs, most popular)
+  #Seaborn (plots: heat maps, time series, violin plots)
+
+#Algorithmic Libraries
+  #Scikit-learn (Machine Learning : regression, classification, clustering, and so on.)
+  #Statsmodels (Explore data, estime statistical models, and perform statistical tests.)
