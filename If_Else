@@ -1,0 +1,18 @@
+#Say "Hello to Bob", after allowing for a name to be input
+name = input("What's your name?")
+if name == "bob":
+  print("nice to meet you bob!")
+
+#Provide a prompt and response to an age input (remember to convert the string value of age to an int)
+age = input("How old are you?")
+age = int(age)
+if age > 65:
+print("Senior discounts must be nice.")
+
+#Provide a response to an input of the temperature
+temp = int(input("What is the temperature today"))
+
+if temp < 30:
+  print("Wow it's cold!")
+else:
+  print("Wow it's hot!")
