@@ -1,0 +1,36 @@
+#1st (import the CSV file (that does not have a column header) into Python)
+import pandas as pd
+url = "https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"
+df = pd.read_csv(url, header = None)
+
+#If data does have a header, change df to:
+df = pd.read_csv(url)
+
+#2nd (ensure the data populated/transferred/uploaded as expected)
+  #printing the entire dataframe could take to long "df"
+  #instead show the first n rows of data frame, as seen below. Or the last n rows of the data frame "df.tail(n)"
+df.head(5)
+
+#3rd (column names are currently not assigned ex: 1,2,3,4, etc.. Replace/Assign column headers.
+headers=["symboling","normalized-losses","make","fuel-type","aspiration","num-of-doors","body-style","drive-wheels","engine-location","wheel-base","length","width","height",
+"curb-weight","engine-type","num-of-cylinders","engine-size","fuel-system","bore","stroke","compression-ratio","horsepower","peak-rpm","city-mpg","highway-mpg","price"]
+df.columns = headers
+
+#4th (ensure the headers were inserted properly)
+df.head(5)
+
+#5th (export your pandas dataframe to a new CSV)
+path="C:\Windows\...\automobile.csv"
+df.to_csv(path)
+
+#6th (verify the data type of the columns)
+df.dtypes
+
+#7th (check the statistical summary of each column)
+df.describe()
+  #modify to show a summary of all columns
+df.describe(include="all")
+  #check the dataset in a broader view (output will provide a concise summary of the dataframe)
+df.info
+
+#8 ( )
