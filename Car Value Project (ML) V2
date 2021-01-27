@@ -1,3 +1,5 @@
+#import and read the data
+
 import pandas as pd
 import numpy as np
 
@@ -13,3 +15,31 @@ df.tail(10)
 headers = ["symboling","normalized-losses","make","fuel-type","aspiration", "num-of-doors","body-style","drive-wheels","engine-location","wheel-base", "length","width","height","curb-weight","engine-type","num-of-cylinders", "engine-size","fuel-system","bore","stroke","compression-ratio","horsepower","peak-rpm","city-mpg","highway-mpg","price"]
 print("headers\n",headers)
 
+df.columns = headers
+df.head(10)
+
+df1=df.replace('?',np.NaN)
+
+df=df1.dropna(subset=["price"], axis=0)
+df.head(20)
+
+print(df.columns)
+
+#Save the dataset to csv to your local machine as "automobile"
+df.to_csv("automobile.csv",index=False)
+
+#Now provide basic insight into the dataset
+df.dtypes
+
+#Provide a statistical summary of each column (count, mean, std dev, etc...)
+dataframe.describe()
+  #or
+df.describe()
+  #provide all columns (even dtypes of object-type)
+df.describe(include = "all")
+
+#Get the statistics for the 'length' and 'compression-ratio' columns
+df[['length','compression-ratio']].describe()
+
+#provide a summary of the df
+df.info()
