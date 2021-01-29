@@ -1,0 +1,55 @@
+#Drop a missing value
+import pandas as pd
+import numpy as np
+
+dataframes.dropna()
+
+#Drop the entire row if value missing ("price" is the column selected, axis (0 = entire row, 1 = entire column), inplace (true = modify dataset directly)
+df.dropna(subset=["price"], asix=0, inplace=True)     #this line of code modifies the dataframe
+    #or
+df=df.dropna(subset=["price"], asix=0)                #this line of code does not modify the dataframe
+
+
+#Replace a missing value with the avg of the column
+  #use dataframe.replace(missing_value, new_vaue):
+mean = df["normalized-losses"].mean()
+df["normalized-losses"].replace(np.nan, mean)
+
+
+#------------------------Data Formatting------------------------
+#conver "mpg" to "L/100km" in Car dataset, and rename the city-mpg to "city-L/100km
+df["city-mg"]=235/df["city-mpg"]
+df.rename(columns={"city_mpg": "city-L/100km"}, inplace=True)
+
+#Check the data type
+dataframe.dtypes()
+  #Convert the data types
+dataframe.astype()
+  #Example: convert "price" column to int type variable
+df["price"] = df["price"].astype("int")
+
+
+#------------------------Data Normalizing------------------------
+#Approaches:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
